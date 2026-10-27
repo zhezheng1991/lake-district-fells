@@ -1,0 +1,100 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-27T10:52:30.856Z",
+  "item": {
+    "title": "Lake District Fells",
+    "subtitle": "Triangle symbols sized by height and coloured by prominence"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "analysis",
+    "showHeader": true,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "right": {
+        "hidden": false,
+        "width": "330px",
+        "title": "Prominence colours",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "ramp-controls",
+            "title": "Adjust colour ramp"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "title": "Fell symbology",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "prominence-ramp-controls",
+        "label": "Prominence colour ramp controls",
+        "bundlePath": "./runtime/behaviors/prominence-ramp-controls-ec6715aade7992e3.js",
+        "sourceSha256": "ec6715aade7992e3c550e3cbf584601cccb6e36dc473b81ba7ee1d529819818f",
+        "modulePaths": [],
+        "config": {
+          "layerId": "1a17cfe08b6-layer-2",
+          "heightField": "Metres",
+          "prominenceField": "Drop_",
+          "heightMin": 37,
+          "heightMax": 978.07,
+          "prominenceMin": 0,
+          "prominenceMax": 912.2
+        },
+        "mounts": [
+          "ramp-controls"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-27T10:53:40.302Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "15f776e1-7914-486c-a466-d2c09ce0f79a",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-e050ab93-a5cc-4465-9e9e-a8a1075c07de",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-27T10:52:30.856Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}

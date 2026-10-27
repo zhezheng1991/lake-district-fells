@@ -1,0 +1,146 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a17cfe08b6-layer-2",
+      "title": "Lake District Fells",
+      "url": "https://services4.arcgis.com/QqwweGsWzDm98mss/arcgis/rest/services/LakeDistrictFells_NP_2026/FeatureServer/0",
+      "itemId": "c039cff00fd446ce9b21acba1b11f484",
+      "layerType": "ArcGISFeatureLayer",
+      "blendMode": "normal",
+      "layerDefinition": {
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "field": "Metres",
+                "legendOptions": {
+                  "title": "Height (m)"
+                },
+                "stops": [
+                  {
+                    "size": 6,
+                    "value": 37
+                  },
+                  {
+                    "size": 30,
+                    "value": 978.07
+                  }
+                ]
+              },
+              {
+                "type": "colorInfo",
+                "field": "Drop_",
+                "legendOptions": {
+                  "title": "Prominence (m)"
+                },
+                "stops": [
+                  {
+                    "color": [
+                      33,
+                      102,
+                      172,
+                      255
+                    ],
+                    "label": "Low prominence",
+                    "value": 0
+                  },
+                  {
+                    "color": [
+                      247,
+                      247,
+                      247,
+                      255
+                    ],
+                    "label": "Medium prominence",
+                    "value": 456.1
+                  },
+                  {
+                    "color": [
+                      178,
+                      24,
+                      43,
+                      255
+                    ],
+                    "label": "High prominence",
+                    "value": 912.2
+                  }
+                ]
+              }
+            ],
+            "symbol": {
+              "type": "esriSMS",
+              "color": [
+                91,
+                143,
+                209,
+                255
+              ],
+              "angle": 0,
+              "xoffset": 0,
+              "yoffset": 0,
+              "size": 10,
+              "style": "esriSMSTriangle",
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  36,
+                  54,
+                  75,
+                  255
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "world-hillshade-layer",
+        "showLegend": false,
+        "opacity": 1,
+        "title": "World Hillshade",
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "visibility": true,
+        "layerType": "ArcGISTiledMapServiceLayer"
+      },
+      {
+        "id": "topo-vector-base-layer",
+        "opacity": 1,
+        "title": "World Topo",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+      }
+    ],
+    "title": "Topographic"
+  },
+  "authoringApp": "ArcGIS API for JavaScript",
+  "authoringAppVersion": "5.1",
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.37",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -402926.68553977495,
+        "ymin": 7200126.496590973,
+        "xmax": -288253.13848890003,
+        "ymax": 7337951.880027814
+      }
+    }
+  }
+}
